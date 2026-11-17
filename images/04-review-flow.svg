@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+<title id="title">Рабочий цикл с текстом</title><desc id="desc">Сначала проверьте факты, затем улучшайте формулировки.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#40536b"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#17253a}.head{font-size:28px;font-weight:700}.name{font-size:20px;font-weight:700}.body{font-size:16px;fill:#34445c}.note{font-size:17px;fill:#34445c}.card{stroke-width:2.5;rx:18;ry:18}.arrow{stroke:#40536b;stroke-width:3;marker-end:url(#a)}</style>
+<rect width="1200" height="420" fill="#f6f8fc"/><text class="head" x="600" y="52" text-anchor="middle">Рабочий цикл с текстом</text>
+<rect class="card" x="61" y="125" width="250" height="175" fill="#eaf1ff" stroke="#2864dc"/>
+<text class="name" x="186.0" y="165" text-anchor="middle">Факты</text>
+<text class="body" x="186.0" y="203" text-anchor="middle">Исходные заметки</text>
+<line class="arrow" x1="316" y1="212.5" x2="329" y2="212.5"/>
+<rect class="card" x="337" y="125" width="250" height="175" fill="#e8f7ef" stroke="#278052"/>
+<text class="name" x="462.0" y="165" text-anchor="middle">Черновик</text>
+<text class="body" x="462.0" y="203" text-anchor="middle">Текст по аудитории</text>
+<line class="arrow" x1="592" y1="212.5" x2="605" y2="212.5"/>
+<rect class="card" x="613" y="125" width="250" height="175" fill="#fff4df" stroke="#c58515"/>
+<text class="name" x="738.0" y="165" text-anchor="middle">Сверка</text>
+<text class="body" x="738.0" y="203" text-anchor="middle">Каждое утверждение</text>
+<text class="body" x="738.0" y="228" text-anchor="middle">по источнику</text>
+<line class="arrow" x1="868" y1="212.5" x2="881" y2="212.5"/>
+<rect class="card" x="889" y="125" width="250" height="175" fill="#f2eaff" stroke="#8053b8"/>
+<text class="name" x="1014.0" y="165" text-anchor="middle">Правка</text>
+<text class="body" x="1014.0" y="203" text-anchor="middle">Точность и тон</text>
+<text class="note" x="600" y="360" text-anchor="middle">Сначала проверьте факты, затем улучшайте формулировки.</text></svg>

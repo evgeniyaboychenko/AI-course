@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Как вместе работают человек, harness, генеративная модель, агент и инструменты</title>
+  <desc id="desc">Человек задаёт цель harness. Harness передаёт модели инструкции и контекст. Модель предлагает следующий шаг агенту, который вызывает разрешённые инструменты через harness и повторяет цикл до готового черновика. Harness показывает результат человеку для проверки и подтверждения.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M1 1L11 6L1 11Z" fill="#40536b"/></marker>
+    <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M1 1L11 6L1 11Z" fill="#2864dc"/></marker>
+    <style>
+      text{font-family:Arial,Helvetica,sans-serif;fill:#17253a}.title{font-size:30px;font-weight:700}.label{font-size:21px;font-weight:700}.small{font-size:16px;fill:#34445c}.tiny{font-size:14px;fill:#34445c}.box{stroke-width:2.5;rx:18;ry:18}.arrow{fill:none;stroke:#40536b;stroke-width:3;marker-end:url(#arrow)}.loop{fill:none;stroke:#2864dc;stroke-width:3;marker-end:url(#arrowBlue)}
+    </style>
+  </defs>
+  <rect width="1200" height="720" fill="#f6f8fc"/>
+  <text x="600" y="52" text-anchor="middle" class="title">Как компоненты работают вместе</text>
+
+  <rect x="40" y="250" width="190" height="130" class="box" fill="#fff" stroke="#79879a"/>
+  <text x="135" y="295" text-anchor="middle" class="label">Человек</text>
+  <text x="135" y="328" text-anchor="middle" class="small">задаёт цель</text>
+  <text x="135" y="352" text-anchor="middle" class="small">и проверяет итог</text>
+
+  <rect x="300" y="210" width="270" height="210" class="box" fill="#eaf1ff" stroke="#2864dc"/>
+  <text x="435" y="255" text-anchor="middle" class="label">Harness</text>
+  <text x="435" y="290" text-anchor="middle" class="small">контекст и инструкции</text>
+  <text x="435" y="318" text-anchor="middle" class="small">доступы и инструменты</text>
+  <text x="435" y="346" text-anchor="middle" class="small">правила и подтверждения</text>
+  <text x="435" y="386" text-anchor="middle" class="tiny">управляет ходом выполнения</text>
+
+  <rect x="680" y="115" width="270" height="150" class="box" fill="#e8f7ef" stroke="#278052"/>
+  <text x="815" y="158" text-anchor="middle" class="label">ИИ-агент</text>
+  <text x="815" y="192" text-anchor="middle" class="small">планирует шаги</text>
+  <text x="815" y="220" text-anchor="middle" class="small">и решает, что делать дальше</text>
+  <text x="815" y="247" text-anchor="middle" class="tiny">цикл действий для достижения цели</text>
+
+  <rect x="680" y="335" width="270" height="150" class="box" fill="#fff4df" stroke="#c58515"/>
+  <text x="815" y="378" text-anchor="middle" class="label">Генеративная модель</text>
+  <text x="815" y="412" text-anchor="middle" class="small">понимает входной контекст</text>
+  <text x="815" y="440" text-anchor="middle" class="small">создаёт ответ или следующий шаг</text>
+  <text x="815" y="467" text-anchor="middle" class="tiny">сама по себе не выполняет внешние действия</text>
+
+  <rect x="1010" y="225" width="155" height="230" class="box" fill="#f2eaff" stroke="#8053b8"/>
+  <text x="1087" y="270" text-anchor="middle" class="label">Инструменты</text>
+  <text x="1087" y="310" text-anchor="middle" class="small">поиск</text>
+  <text x="1087" y="340" text-anchor="middle" class="small">файлы</text>
+  <text x="1087" y="370" text-anchor="middle" class="small">таблицы</text>
+  <text x="1087" y="400" text-anchor="middle" class="small">приложения</text>
+  <text x="1087" y="431" text-anchor="middle" class="tiny">только разрешённые</text>
+
+  <path d="M230 315H290" class="arrow"/>
+  <text x="260" y="298" text-anchor="middle" class="tiny">цель</text>
+  <path d="M570 260C615 250 635 210 670 200" class="arrow"/>
+  <text x="612" y="226" text-anchor="middle" class="tiny">контекст</text>
+  <path d="M680 420C635 410 610 355 570 350" class="arrow"/>
+  <text x="620" y="398" text-anchor="middle" class="tiny">запрос модели</text>
+  <path d="M815 335V275" class="arrow"/>
+  <text x="830" y="310" class="tiny">ответ / шаг</text>
+  <path d="M950 190C990 190 985 260 1000 280" class="arrow"/>
+  <text x="976" y="218" text-anchor="middle" class="tiny">вызов</text>
+  <path d="M1005 410C975 460 940 465 920 450" class="arrow"/>
+  <text x="971" y="475" text-anchor="middle" class="tiny">результат инструмента</text>
+  <path d="M435 420V535H815V495" class="loop"/>
+  <text x="625" y="560" text-anchor="middle" class="small">Harness возвращает результат модели — агент при необходимости повторяет цикл</text>
+  <path d="M300 385C265 440 185 440 155 390" class="arrow"/>
+  <text x="225" y="465" text-anchor="middle" class="small">черновик для проверки</text>
+
+  <rect x="300" y="610" width="665" height="58" rx="14" fill="#fff" stroke="#cbd3df" stroke-width="1.5"/>
+  <text x="632" y="646" text-anchor="middle" class="small">Человек подтверждает важные решения и внешние действия</text>
+</svg>
